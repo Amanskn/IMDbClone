@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb</title>
+    <script src="https://kit.fontawesome.com/b98405c5eb.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://clipartcraft.com/images/imdb-logo-png-6.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="navigation-drawer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="https://clipartcraft.com/images/imdb-logo-png-6.png" alt="Logo" style="color: white;">
+           
+            <div id="searchNDfav">
+                <input id="search-bar" type="text" placeholder="Search for a movie..." onKeyUp="fetchMovie()">
+                <a href="favs.html" ><h3 id="my-favs">Favourites</h3></a> 
+            </div>                    
+            <div id="user-container">
+                <div id="logo">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+        <h1 style="color:darkslategray; margin-top:25vh; text-align: center;">Search for a movie in the above search bar and add them to favourites if you want. <br>Give it a try :)</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

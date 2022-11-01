@@ -1,0 +1,341 @@
+/* ----------------------A basic stuff related to the body tag------------------------ */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: grey;
+}
+/* ---------------------styling the anchor tag in my own way */
+a{
+    text-decoration: none;
+}
+/* --------------------------------CSS related to header section starts here--------------------- */
+nav {
+    height: 70px;
+    /* width: 100%; */
+    background-color: black;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+#deatils-nav-logo{
+    margin-right: auto;
+}
+
+/*------------ this is the css related to the hamburger icon */
+header #navigation-drawer{
+    box-shadow: 0px 0px 15px 10px burlywood;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0px 60px 0px 20px;
+    
+
+}
+header #navigation-drawer i{
+    color:teal;
+    font-size: 1.7rem;
+}
+
+/* ----------This is IMDb logo in the nav bar */
+nav img{
+    width: 50px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 15px 10px burlywood;
+    border-radius: 10px;
+    background-color: black;
+    padding: 8px;
+}
+#searchNDfav{
+    display: flex;
+    margin: auto;
+    width: 60%;
+    /* border: 2px solid green; */
+}
+
+#search-bar{
+    margin: auto;
+    width: 60%;
+    font-size: 1.3rem;
+    height: 29px;
+    border-radius: 13px;
+    border: 0px solid transparent;
+    background-color: black;
+    border-radius: 20px;
+    color: teal;
+
+    padding: 5px 10px;
+    box-shadow: 0px 0px 15px 10px burlywood;
+    
+}
+
+#my-favs{
+    
+    border-radius: 20px;
+    color: teal;
+    font-weight: 400;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    box-shadow: 0px 0px 15px 10px burlywood;
+    font-weight: bold;
+    
+}
+#my-favs:hover{
+    background-color: grey;
+    color: black;
+    
+}
+header #user-container{
+    box-shadow: 0px 0px 15px 10px burlywood;
+    padding: 3px;
+    height: 2.8rem;
+    width: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 15px;
+}
+header #user-container i{
+    font-size: 2.2rem;
+    color: teal;
+    border-radius: 50%;
+}
+/* ----------------------CSS related to header section ends here------------------ */
+
+
+/* --------------------------Now here comes the css related to the main section---------------------- */
+#main{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+}
+/* -----------------This is the css related to the individual items that will be shown as suggestions while search is going on ---------------------*/
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 250px;
+    height: 360px;
+    background-color: black;
+    border-radius: 0 0 21px 21px;
+    border: 5px solid teal;
+    box-shadow: 0px 0px 20px 10px burlywood;
+    margin: 2px 4px 10px;
+    position: relative;
+}
+.cardImageContainer{
+    width: 250px;
+    height: 250px;
+}
+.cardImage{
+    width: 100%;
+    height: 100%;
+}
+.cardDetails{
+    
+    display: flex;
+    margin-left: 15px;
+    padding-top: 17px;
+    color:teal;
+}
+.favIcon{   
+    color: teal;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    cursor: pointer;
+}
+.movieName{
+    width: 170px;
+}
+
+.hide{
+    display:none;
+}
+
+
+/* details page */
+.flex{
+    width: 50px;
+    height: 40px;
+    margin-right: 90%;
+}
+.flex img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.details-page-container{
+    position: relative;
+    color: white;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    box-shadow: 0px 0px 15px 5px burlywood;
+    
+}
+
+.movie-poster{
+    width: 30%;
+    height: 500px;
+    background-color: aqua;
+    /* border: 1px solid yellow; */
+}
+.poster-image{
+   
+    width: 100%;
+    height: 100%;
+}
+.movie-details-container{
+    width: 70%;
+    height: 500px;
+    background-color:rgba(0, 128, 128,0.8);
+    
+    
+}
+.movie-details{
+    width: 88%;
+    padding-left: 10% ;
+    /* border: 2px solid black; */
+    color:burlywood;
+}
+.details-favIcon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+/* this is the css related to the website to make it responsive------------------ */
+@media only screen and (max-width: 600px) {
+    .movie-poster{
+        width: 100%;
+        height: 500px;
+        background-color: aqua;
+    }
+    .movie-details-container{
+        /* margin: auto; */
+        width: 100%;
+        height: auto;        
+    }
+    
+    .movie-details{
+        padding-left: 20px;
+        width: 90%;
+        height: 500px;
+        padding-bottom: 30px;
+        
+    }
+    .details-favIcon{
+        
+        position: absolute;
+        right: 10px;
+        top: 525px;
+        cursor: pointer;
+    }
+
+    #my-favs{
+        width:75px;
+        font-size: 10px;
+        border: 1px solid white;
+        text-align: center;
+    }
+    .logo {
+        margin: 5px 0px 0px 10px;
+        width: 30px;
+        height: 30px;
+    
+    }
+    #searchNDfav{
+        display: flex;
+        margin: auto;
+        width: 70%;
+    }
+    
+    #search-bar{
+        margin: auto;
+        width: 50%;
+        height: 29px;
+        border-radius: 13px;
+        border: 0px solid transparent;
+        padding-left: 12px ;
+    }
+    
+}
+
+
+/* fav btn */
+
+
+.material-symbols-outlined {
+    font-size: 35px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.material-symbols-outlined:hover {
+    transform: scale(1.2);
+    font-variation-settings:
+    'FILL' 1
+
+  }
+.fill{
+    font-variation-settings:
+    'FILL' 1
+
+}
+
+.movie-mini-details{
+
+    
+    /* color: rgb(140, 137, 137); */
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    /* border: 2px solid red; */
+
+}
+.movie-mini-details > span{
+    vertical-align: middle;
+    /* border: 2px solid gold; */
+    /* margin-right: 20px; */
+}
+.movie-mini-details .material-symbols-outlined{
+
+    font-size: 25px;
+    /* border: 2px solid papayawhip; */
+}
+
+.movie-details-description{
+    font-size: large;
+    font-family: sans-serif;
+    word-spacing: 5px;
+    line-height: 25px;
+    /* border: 2px solid yellow; */
+    color: burlywood;
+    
+    margin-bottom: 40px;
+}
+
+
+
+.pb-20{
+    padding-bottom: 20px;
+    /* border: 2px solid pink; */
+}
